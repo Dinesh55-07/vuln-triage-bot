@@ -152,10 +152,4 @@ The AI ranking can vary slightly between runs.
 - Store intruder logs in a persistent table
 - Connect to a live scanner instead of a sample file
 
-## Author
 
-Your Name | Register No. | Department / College
-
-## License
-
-MIT (or your choice)
