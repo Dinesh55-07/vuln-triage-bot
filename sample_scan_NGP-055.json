@@ -1,0 +1,147 @@
+{
+  "scanner": "NGP-055-MiniScan",
+  "target": "10.0.0.0/24",
+  "scan_date": "2026-10-13",
+  "findings": [
+    {
+      "id": "F-001",
+      "host": "10.0.0.5",
+      "port": 23,
+      "type": "open_port",
+      "title": "Telnet service exposed",
+      "severity": "high",
+      "cve": null,
+      "detail": "Cleartext remote login on 23/tcp"
+    },
+    {
+      "id": "F-002",
+      "host": "10.0.0.8",
+      "port": 80,
+      "type": "outdated_version",
+      "title": "Apache httpd 2.4.49",
+      "severity": "critical",
+      "cve": "CVE-2021-41773",
+      "detail": "Path traversal / RCE, public exploits"
+    },
+    {
+      "id": "F-003",
+      "host": "10.0.0.12",
+      "port": 445,
+      "type": "open_port",
+      "title": "SMB exposed to LAN",
+      "severity": "high",
+      "cve": null,
+      "detail": "SMBv1 enabled"
+    },
+    {
+      "id": "F-004",
+      "host": "10.0.0.8",
+      "port": 443,
+      "type": "weak_cipher",
+      "title": "TLS RC4 cipher suite enabled",
+      "severity": "high",
+      "cve": null,
+      "detail": "RC4 is broken"
+    },
+    {
+      "id": "F-005",
+      "host": "10.0.0.20",
+      "port": 443,
+      "type": "outdated_version",
+      "title": "OpenSSL 1.0.1f (Heartbleed)",
+      "severity": "critical",
+      "cve": "CVE-2014-0160",
+      "detail": "Memory disclosure, trivial exploit"
+    },
+    {
+      "id": "F-006",
+      "host": "10.0.0.5",
+      "port": 22,
+      "type": "outdated_version",
+      "title": "OpenSSH 7.2p1",
+      "severity": "medium",
+      "cve": "CVE-2016-6210",
+      "detail": "User enumeration"
+    },
+    {
+      "id": "F-007",
+      "host": "10.0.0.30",
+      "port": 3306,
+      "type": "open_port",
+      "title": "MySQL exposed to network",
+      "severity": "medium",
+      "cve": null,
+      "detail": "3306/tcp reachable from LAN"
+    },
+    {
+      "id": "F-008",
+      "host": "10.0.0.20",
+      "port": 443,
+      "type": "weak_cipher",
+      "title": "TLS 1.0 still enabled",
+      "severity": "medium",
+      "cve": null,
+      "detail": "Legacy protocol"
+    },
+    {
+      "id": "F-009",
+      "host": "10.0.0.8",
+      "port": 443,
+      "type": "weak_cipher",
+      "title": "Self-signed certificate",
+      "severity": "low",
+      "cve": null,
+      "detail": "Not trusted by clients"
+    },
+    {
+      "id": "F-010",
+      "host": "10.0.0.8",
+      "port": 80,
+      "type": "info_leak",
+      "title": "Server banner discloses version",
+      "severity": "low",
+      "cve": null,
+      "detail": "Server header leaks version"
+    },
+    {
+      "id": "F-011",
+      "host": "10.0.0.12",
+      "port": 0,
+      "type": "info_leak",
+      "title": "ICMP timestamp response",
+      "severity": "info",
+      "cve": null,
+      "detail": "Minor info disclosure"
+    },
+    {
+      "id": "F-012",
+      "host": "10.0.0.5",
+      "port": 23,
+      "type": "open_port",
+      "title": "Telnet service exposed",
+      "severity": "high",
+      "cve": null,
+      "detail": "duplicate from 2nd scan engine"
+    },
+    {
+      "id": "F-013",
+      "host": "10.0.0.8",
+      "port": 80,
+      "type": "outdated_version",
+      "title": "Apache httpd 2.4.49",
+      "severity": "critical",
+      "cve": "CVE-2021-41773",
+      "detail": "duplicate"
+    },
+    {
+      "id": "F-014",
+      "host": "10.0.0.8",
+      "port": 443,
+      "type": "weak_cipher",
+      "title": "TLS RC4 cipher suite enabled",
+      "severity": "high",
+      "cve": null,
+      "detail": "duplicate"
+    }
+  ]
+}
