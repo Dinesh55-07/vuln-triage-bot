@@ -17,23 +17,6 @@ An **n8n** workflow that takes a vulnerability scan result, removes duplicates, 
 - Every message carries a status line:
   `🟣 exec #<execution id> | <IST time> | <verdict / severity> | <one-line summary>`
 
-## Architecture
-
-```mermaid
-flowchart LR
-    A[Receive Scan - POST] --> B[Parse & Dedupe]
-    B --> C[AI Agent - Rank Top 5]
-    C --> D[Format Message]
-    D --> E[Telegram Send and Wait]
-    E --> F{Approved?}
-    F -- yes --> G[Telegram Final Report]
-    F -- no --> H[Telegram Rejected Notice]
-
-    M[Telegram Trigger] --> N{Is owner?}
-    N -- yes --> O[No action]
-    N -- no --> P[Log and Ignore Intruder]
-```
-
 ## Nodes
 
 ### Flow 1: triage and approval
